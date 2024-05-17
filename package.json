@@ -8,15 +8,11 @@
     "build": "sst build",
     "deploy": "sst deploy",
     "remove": "sst remove",
-    "console": "sst console",
-    "db": "sst shell drizzle-kit",
-    "db:studio": "sst shell drizzle-kit studio"
+    "console": "sst console"
   },
   "dependencies": {
     "@aws-sdk/client-rds-data": "^3.577.0",
     "@tsconfig/node20": "^20.1.4",
-    "drizzle-kit": "^0.21.1-674c9c2",
-    "drizzle-orm": "^0.30.10",
     "sst": "ion"
   },
   "devDependencies": {

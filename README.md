@@ -37,13 +37,15 @@ bun dev
 Migrate the database:
 
 ```bash
-bun db generate
-bun db migrate
+cd packages/frontend
+bun db:generate
+bun db:migrate
 ```
 
 Deploy:
 
 ```bash
+cd ../..
 bun run deploy
 ```
 

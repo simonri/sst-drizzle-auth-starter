@@ -1,12 +1,15 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "@notes/frontend",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "sst dev next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "sst shell tsx ./src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.1.0",
@@ -20,10 +23,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "drizzle-kit": "^0.21.1-674c9c2",
+    "drizzle-orm": "^0.30.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.10.4",
     "typescript": "^5"
   }
 }

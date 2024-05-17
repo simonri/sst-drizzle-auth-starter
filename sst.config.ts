@@ -9,6 +9,10 @@ export default $config({
     };
   },
   async run() {
-    await import("./infra");
+    const infra = await import("./infra");
+
+    return {
+      FrontendUrl: infra.web.url,
+    };
   },
 });

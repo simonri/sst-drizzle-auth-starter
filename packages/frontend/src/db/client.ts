@@ -2,7 +2,9 @@ import { Resource } from "sst";
 import { drizzle } from "drizzle-orm/aws-data-api/pg";
 import { RDSDataClient } from "@aws-sdk/client-rds-data";
 
-const client = new RDSDataClient({});
+const client = new RDSDataClient({
+  region: "us-east-1",
+});
 
 export const db = drizzle(client, {
   database: Resource.MyPostgres.database,
