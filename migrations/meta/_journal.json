@@ -1,0 +1,20 @@
+{
+  "version": "6",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1715895037187,
+      "tag": "0000_confused_magma",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1715900315247,
+      "tag": "0001_steep_madrox",
+      "breakpoints": true
+    }
+  ]
+}
